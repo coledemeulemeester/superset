@@ -52,8 +52,10 @@ attrs==25.3.0
     #   referencing
     #   requests-cache
     #   trio
-authlib==1.6.9
-    # via fastmcp
+authlib==1.6.11
+    # via
+    #   -r requirements/development.in
+    #   fastmcp
 babel==2.17.0
     # via
     #   -c requirements/base-constraint.txt

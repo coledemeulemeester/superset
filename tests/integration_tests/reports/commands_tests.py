@@ -23,7 +23,6 @@ from uuid import uuid4
 import pytest
 from flask.ctx import AppContext
 from flask_appbuilder.security.sqla.models import User
-from flask_sqlalchemy import BaseQuery
 from freezegun import freeze_time
 from slack_sdk.errors import (
     BotUserAccessError,
@@ -35,6 +34,7 @@ from slack_sdk.errors import (
     SlackRequestError,
     SlackTokenRotationError,
 )
+from sqlalchemy.orm import Query as BaseQuery
 from sqlalchemy.sql import func
 
 from superset import db
